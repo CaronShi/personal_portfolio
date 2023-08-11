@@ -43,19 +43,26 @@
       hsl(35, 100%, 68%));
 
   /* solid */
-
-  --jet: hsl(0, 0%, 22%);
+  --jet: #7c614b80;
   /* 边框*/
-  --onyx: hsl(240, 1%, 17%);
-  --eerie-black-1: hsl(240, 2%, 13%);
-  --eerie-black-2: hsl(240, 2%, 12%);
-  --smoky-black: hsl(0, 0%, 7%);
+  --onyx: #ddd2be59;
+  /*summary 底色*/
+  --eerie-black-1: #ddd2be;
+  /*小图标 底色hsl(240, 2%, 13%)*/
+  --eerie-black-2: #47372a;
+  /*component 底色;#b08968#47372a*/
+  --smoky-black: #ddd2be;
+  /*全局 底色hsl(0, 0%, 7%);*/
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(45, 100%, 72%);
+  --orange-yellow-crayola: #a56e49cf;
+  /*小图标 表色 hsl(45, 100%, 72%)*/
   --vegas-gold: hsl(45, 54%, 58%);
+  /*summary 字颜色*/
   --light-gray: hsl(0, 0%, 84%);
+  /*全局paragraph颜色*/
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
+  /*左边信息列表字体颜色*/
   --bittersweet-shimmer: hsl(0, 43%, 51%);
 
   /**
@@ -315,7 +322,7 @@ article.active {
   content: "";
   position: absolute;
   inset: 1px;
-  background: var(--bg-gradient-jet);
+  background: #47372a;
   border-radius: inherit;
   z-index: -1;
 }
@@ -587,7 +594,7 @@ main {
   content: "";
   position: absolute;
   inset: 1px;
-  background: var(--bg-gradient-jet);
+  background: #47372a;
   border-radius: inherit;
   z-index: -1;
 }
@@ -1226,13 +1233,13 @@ main {
 }
 
 .blog-meta :is(.blog-category, time) {
-  color: var(--light-gray-70);
+  color: #47372a;
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
 }
 
 .blog-meta .dot {
-  background: var(--light-gray-70);
+  background: #47372a;
   width: 4px;
   height: 4px;
   border-radius: 4px;
@@ -1249,7 +1256,7 @@ main {
 }
 
 .blog-text {
-  color: var(--light-gray);
+  color: #47372a;
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
