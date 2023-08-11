@@ -857,9 +857,6 @@ main {
   margin-bottom: 30px;
 }
 
-#danceicon {
-  filter: brightness(1.5) sepia(1) hue-rotate(30deg);
-}
 
 .timeline .title-wrapper {
   align-items: center;
@@ -918,6 +915,21 @@ main {
   color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
+}
+
+#cveffect {
+  /* Your regular styling here */
+  color: #f6f6f6;
+  /* Change this to your preferred text color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+  /* Add a smooth transition effect */
+}
+
+#cveffect:hover {
+  /* Styling for the hover state */
+  color: hsl(36, 77%, 76%);
+  /* Change this to your preferred hover text color */
 }
 
 
@@ -1034,6 +1046,7 @@ main {
 .select-item button:hover {
   --eerie-black-2: hsl(240, 2%, 20%);
 }
+
 
 .project-list {
   display: grid;
