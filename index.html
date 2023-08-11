@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>vCard - Personal Portfolio</title>
+  <title>Cheng Shi - Personal Portfolio</title>
 
   <!--
     - favicon
@@ -36,7 +36,6 @@
     <!--
       - #SIDEBAR
     -->
-
     <aside class="sidebar" data-sidebar>
 
       <div class="sidebar-info">
@@ -179,17 +178,20 @@
             <button class="navbar-link" data-nav-link>Resume</button>
           </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
 
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Blog</button>
           </li>
-
-          <li class="navbar-item">
+          <!--
+        - #NAVBAR
+         <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
+         <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+      -->
 
         </ul>
 
@@ -212,7 +214,8 @@
         <section class="about-text">
           <p>
 
-            I am Cheng Shi, a master student in Applied Data Science major at University of Southern California.
+            I am Cheng Shi, a master student in Applied Data Science major at University of Southern
+            California.
             I'll graduate on December 2023, and I am actively looking for a full-time Software Engineer position.
           </p>
           <p>
@@ -221,7 +224,6 @@
             have a strong aptitude for learning new technologies, and a proven track record of meeting aggressive goals.
 
           </p>
-
         </section>
 
 
@@ -335,7 +337,7 @@
 
             </p>
             <p class="service-item-text">
-              <strong>Databases</strong> SQL; MongoDB; Spark; Hadoop;
+              <strong>Databases:</strong> SQL; MongoDB; Spark; Hadoop;
             </p>
             <p class="service-item-text">
               <strong>Languages: </strong> Python; JavaScript; Java; TypeScript;
@@ -446,10 +448,13 @@
 
               <h4 class="h4 timeline-item-title">Penn State University</h4>
 
-              <span>2017.08 — 2021.5</span>
+              <span>2017.08 — 2021.05</span>
 
               <p class="timeline-text">
-                I got my bachelar degree of science, in Accounting major at PSU. GPA 3.8/4.0
+                I got my bachelar degree of science, in Accounting major at PSU with GPA 3.8/4.0.
+                At school, I took some courses from engineering department learning the basis of python, pandas/numpy,
+                SQL,
+                tableau, and information system as well.
               </p>
 
             </li>
@@ -473,30 +478,31 @@
             <li class="timeline-item">
 
               <h4 class="h4 timeline-item-title">Software Engineer Intern</h4>
-
+              <small class="timeline-text"> In ASSIST Project - a non-profit
+                organization in Los Angeles
+              </small>
               <span>2023.05 - currently</span>
 
               <p class="timeline-text">
-                I am working on ASSIST project for the web app development. ASSIST Project is a non-profit organization
-                in Los Angeles,
-                provides a platform for students and organization to organize volunteer activities.
+
+              <ul class="timeline-text">
+                <li>● Developed a front-end web page using Angular framework with HTML, CSS and TypeScript technologies.
+                </li>
+                <li>● Designed and built NoSQL database MongoDB to capture users’ data from the RESTful API created by
+                  Node.js.</li>
+                <li>● Utilized Angular FormControl and Express Joi validation library for implementing robust data
+                  validation
+                  mechanisms for preventing at least 5 security risks, such as injection attacks.</li>
+                <li>● Developed admin panel with a user data visualization dashboard by D3.js, as well as an approval
+                  workflow,
+                  allowing administrators to review user information and approve or decline user activities.</li>
+              </ul>
+
               </p>
 
             </li>
 
-            <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Business Analyst Intern</h4>
-
-              <span>2021.04 — 2021.08</span>
-
-              <p class="timeline-text">
-                I was an BA intern in Memect, which is a digital platform for corporate business that enables business
-                process automation and real-time monitoring for financial institutions. They offer bond lifecycle
-                solutions, bank compliance and internalization solutions, and bank statement verification solutions.
-              </p>
-
-            </li>
 
             <li class="timeline-item">
 
@@ -505,18 +511,116 @@
               <span>2023.04</span>
 
               <p class="timeline-text">
-                Explored data to identify potential discrepancies and patterns by data preprocessing, and feature
-                selection.
 
-                Developed recommendation systems, and constructed three models using PySpark: (i) an item-based
-                collaborative filtering model, (ii) a ML(XGBoost) model, and (iii) a hybrid model with 5+ filters.
-                Optimized the system further by adjusting the model features, proportion of hybrid models, and
-                algorithm, resulting in an RMSE reduction from 1.23 to 0.97, decreasing 0.25 error rate.
+              <ul class="timeline-text">
+                <li>
+                  ● Explored data to identify potential discrepancies and patterns by data preprocessing, and feature
+                  selection.
+                </li>
+                <li>
+                  ● Developed recommendation systems, and constructed three models using PySpark: (i) an item-based
+                  collaborative filtering model, (ii) a ML(XGBoost) model, and (iii) a hybrid model with 5+ filters.
+                </li>
+                <li>
+                  ● Optimized the system further by adjusting the model features, proportion of hybrid models, and
+                  algorithm, resulting in an RMSE reduction from 1.23 to 0.97, decreasing 0.25 error rate.
+                </li>
 
+
+              </ul>
               </p>
 
             </li>
+            <li class="timeline-item">
 
+              <h4 class="h4 timeline-item-title">Yelp Full Stack & Android Project(Individual Project)</h4>
+
+              <span>2022.10 - 2022.12</span>
+
+              <p class="timeline-text">
+
+              <ul class="timeline-text">
+                <li>
+                  ● Built a Yelp-like web with autocomplete search, map, reservation-making functions and deployed on
+                  GCP.
+
+                </li>
+                <li>
+                  ● Developed responsive front-end using Angular framework, TypeScript and Bootstrap on the client side.
+                </li>
+                <li>
+                  ● Implemented the RESTful API and handled HTTP requests and responses by Node.js framework
+                </li>
+                <li>
+                  ● Developed a similar Android application using Java on Android IDE environment and tested on its
+                  emulator.
+                </li>
+
+              </ul>
+              </p>
+
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">College Admission Advisor </h4>
+
+              <span>2022.03 - 2022.04</span>
+
+              <p class="timeline-text">
+
+              <ul class="timeline-text">
+                <li>
+                  ● College Admission Advisor is a web-based data application building with Python Flask, designed to
+                  assist
+                  prospective students in finding the right school by examining the college admission and city data in
+                  the U.S.
+
+                </li>
+                <li>
+                  ● Collected and stored data on Google Firebase, and worked on data analysis and visualization using
+                  Python libraries.
+                </li>
+                <li>
+                  ● Built a K-means model for college clustering by Scikit-learn. Tasks include data normalization,
+                  performing the
+                  elbow method, running the ML models and adjusting model storing method to improve 50% running
+                  efficiency
+                </li>
+
+
+              </ul>
+              </p>
+
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Business Analyst Intern</h4>
+              <small class="timeline-text"> In Memect - a Fin-tech company
+              </small>
+              <span>2021.04 — 2021.08</span>
+
+              <p class="timeline-text">
+
+              <ul class="timeline-text">
+                <li>
+                  ● During the work period, the product was sold and landed to 5 top banks by the team, and achieved $1M
+                  revenue.
+                </li>
+                <li>
+                  ● Mainly participated in designing and promoting a fin-tech software by (i) conducting market
+                  research, (ii)
+                  examining product requirements and feasibility, and (iii) presenting the product to clients and
+                  colleagues.
+
+                </li>
+                <li>
+                  ● Follow-up and collaborated across teams on product improvement based on periodic performance review.
+                </li>
+
+              </ul>
+              </p>
+
+            </li>
           </ol>
 
         </section>
@@ -836,7 +940,7 @@
       <article class="blog" data-page="blog">
 
         <header>
-          <h2 class="h2 article-title">Blog</h2>
+          <h2 class="h2 article-title">Interests</h2>
         </header>
 
         <section class="blog-posts">
@@ -847,23 +951,23 @@
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                  <img src="./assets/images/locking.jpg" alt="Design conferences in 2022" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category">Locking</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23">August 2023</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+                  <h3 class="h3 blog-item-title">Slam Dunk</h3>
 
                   <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                    Enjoy Dance Studio Showcase 2023
                   </p>
 
                 </div>
@@ -875,23 +979,23 @@
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                  <img src="./assets/images/LESSE.png" alt="Best fonts every designer" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category">Kpop cover</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23">May 2023</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+                  <h3 class="h3 blog-item-title">Eve, Psyche & The Bluebeard's Wife</h3>
 
                   <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                    This dance cover has gained 25.7k views on instagram.
                   </p>
 
                 </div>
@@ -919,7 +1023,7 @@
                   <h3 class="h3 blog-item-title">Design digest #80</h3>
 
                   <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                    None
                   </p>
 
                 </div>
@@ -947,7 +1051,7 @@
                   <h3 class="h3 blog-item-title">UI interactions of the week</h3>
 
                   <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                    None
                   </p>
 
                 </div>
@@ -975,7 +1079,7 @@
                   <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
 
                   <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    None
                   </p>
 
                 </div>
@@ -1003,7 +1107,7 @@
                   <h3 class="h3 blog-item-title">Design digest #79</h3>
 
                   <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                    None
                   </p>
 
                 </div>
