@@ -1088,6 +1088,7 @@ main {
 
 .project-item>a {
   width: 100%;
+
 }
 
 .project-img {
@@ -1096,6 +1097,9 @@ main {
   height: 200px;
   border-radius: 16px;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+
   margin-bottom: 15px;
 }
 
