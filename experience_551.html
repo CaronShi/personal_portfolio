@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheng Shi - Personal Portfolio</title>
+
+    <!--
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="main-content_subpage">
+
+        <!--
+          - #ABOUT
+        -->
+
+
+        <article class="about active" data-page="about">
+
+            <a href="index.html" class="h4 blog-item-title" id="back" style="color:  hsl(45, 100%, 72%);"> &lt;&lt; Back
+                to Main Page
+            </a>
+
+
+
+            <header>
+
+                <h2 class="h2 article-title">College Admission Advisor</h2>
+            </header>
+
+            <section class="about-text">
+                <section class="service">
+                    <ul class="service-list-experience">
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <p>College Admission Advisor (CAA) is a data application designed to help students
+                                    discover colleges and their neighborhoods across the United States.
+                                    Technologies: Python(numpy, pandas, matplotlib, sklearn), Flask, Streamlit, Google
+                                    Firebase
+                                </p>
+                                <p><strong><b>Software Architecture</b></strong><br>
+                                <figure class="experience_img">
+                                    <img src="./assets/images/sodapdf-converted/ri_1.png" loading="lazy"
+                                        style="background-color: white;">
+                                </figure><br>
+                        </li>
+                    </ul>
+
+                </section>
+
+                <h2>Backgroud</h2>
+                <p><strong><b>Motivation</b></strong><br>
+                    Higher education provides numerous benefits to individuals as well as to society. It
+                    is not only
+                    associated with higher income levels and better employment opportunities, but also
+                    plays a key
+                    role in the nation’s economic growth and social prosperity. With great opportunities
+                    come great
+                    challenges as prospective students start their journey to find the perfect school.
+                    On the path to securing college admission, students consider various aspects such
+                    as: fields of
+                    study, college ranking, study costs, location and cost of living. In this project,
+                    we aim to help
+                    students by developing a tool that collects, analyzes and visualizes critical
+                    college related data.
+                    This application will allow students to gauge how quantitative factors (SAT, GRE and
+                    GPA) is
+                    perceived by different colleges and help them make informed decisions to improve
+                    their
+                    admission chances.
+                </p>
+
+                <p>
+                    <strong><b>Goal</b></strong><br>
+
+                    Develop a web-based data application to assist prospective students in finding the
+                    right school
+                    by examining college admission and location data in the United States.
+                </p>
+
+                <h2>Application Component</h2>
+                <p><strong><b>Firestore Cloud Database</b></strong><br>
+                    Our first dataset is of colleges admissions data. the data was exported from IPEDS,
+                    the Integrated
+                    Postsecondary Education Data System. A cloud database has been setup on Firestore to
+                    maintain
+                    and manage application data (colleges dataset).
+                </p>
+
+                <p>
+                    <strong><b>Numbeo API</b></strong><br>
+
+                    Our second data source is Numbeo, a crowd-sourced global database of quality-of-life
+                    information. It is used to support our college admission data and provide general
+                    city
+                    information, such as, housing indicators, perceived crime rates, and quality of
+                    healthcare, among
+                    others. The data is fetched on demand utilizing Numbeo API through an academic
+                    license.
+                </p>
+                <p>
+                    <strong><b>Flask Web Service</b></strong><br>
+                    A web service was created to connect the frontend with the data sources. It is aimed
+                    to fetch the
+                    data from both data sources and export it to the frontend ready to be displayed and
+                    visualized.
+                </p>
+
+                <p>
+                    <strong><b>Machine Learning Model</b></strong><br>
+                    A web service was created to connect the frontend with the data sources. It is aimed
+                    to fetch the
+                    data from both data sources and export it to the frontend ready to be displayed and
+                    visualized.
+                    A Machine Learning model was developed to provide college recommendations based on a
+                    student’s academic standing. The model was developed using Scikit-learn package to
+                    conduct
+                    unsupervised learning and cluster out colleges by their standard exam scores (SAT
+                    and ACT) and
+                    their acceptance rate.
+                    The model input includes standardized test scores (SAT and ACT), and the acceptance
+                    (a
+                    calculated value from dividing total admissions over total applicants), the lower
+                    the rate the more
+                    competitive a college’s admission. For example, if the acceptance rate of USC is
+                    10%, it assumes
+                    students who are top 10% or exceed 90% of all applicants in academic performance and
+                    other
+                    backgrounds could get offers from USC. The measure of academic performance and
+                    backgrounds
+                    for undergraduate students is usually based on their GPA, AP, research or leadership
+                    experience,
+                    academic awards, and scholarships. Therefore, by calculating a student’s acceptance
+                    rate using
+                    the five factors, we could get an acceptance rate number which matches a ML cluster
+                    combined
+                    with his SAT or ACT score.
+                    In order to build a ML model, first, by preprocessing the raw data, we standardized
+                    all inputs,
+                    such as replacing the blank values. Second, we normalized the data into range 0 to 1
+                    by min-max
+                    scaler for better clustering. Also, we used K-means clustering and
+                    decided the cluster
+                    number 7 by the elbow method. Finally, we built a ML model and saved the
+                    model
+                    locally for a faster operation.
+                </p>
+                <div class="image-container">
+                    <figure class="experience_img_flex">
+                        <img src="./assets/images/sodapdf-converted/ri_2.png" loading="lazy">
+                    </figure><br>
+                    <figure class="experience_img_flex">
+                        <img src="./assets/images/sodapdf-converted/ri_3.png" loading="lazy">
+                    </figure><br>
+
+                </div>
+                <h2>Data Flow</h2>
+                <figure class="experience_img_flex">
+                    <img src="./assets/images/sodapdf-converted/ri_4.png" loading="lazy"
+                        style="background-color: white;">
+                </figure><br>
+                <h2>Application Main Functions</h2>
+                <p>
+                    The application offers three main functions for users which are: data summary,
+                    college
+                    recommender and colleges search and exploration.
+                </p>
+                <figure class="experience_img_flex">
+                    <img src="./assets/images/sodapdf-converted/ri_6.png" loading="lazy"
+                        style="background-color: white;">
+                </figure>
+                <p><b><strong> 1. About the Data:</strong></b>
+                    <br>
+                    ▪ A data summary displaying statistical facts about colleges data and city data. It
+                    is aimed
+                    to showcase a high-level visualization of the data.<br>
+                    ▪ Provides full access to the raw data utilized and the ability to download it.<br>
+                </p>
+                <figure class="experience_img_flex">
+                    <img src="./assets/images/sodapdf-converted/ri_5.png" loading="lazy"
+                        style="background-color: white;">
+                </figure>
+                <figure class="experience_img_flex">
+                    <img src="./assets/images/sodapdf-converted/ri_10.png" loading="lazy"
+                        style="background-color: white;">
+                </figure>
+                </p>
+                <p><b><strong> 2. Find Your College:</strong></b>
+                    <br>
+                    ▪ Taking users academic standing as input, then recommends a list of colleges that
+                    are
+                    compatible using unsupervised machine learning techniques.<br>
+                    ▪ The inputs needed include student’s GPA, standard test scores, research experience
+                    level,
+                    academic awards if any, number completed AP courses and secured scholarships if
+                    any.<br>
+                    ▪ The result colleges are sorted based on school rank and acceptance rate.
+
+                <figure class="experience_img_flex">
+                    <img src="./assets/images/sodapdf-converted/ri_14.png" loading="lazy"
+                        style="background-color: white;">
+                </figure>
+                <figure class="experience_img_flex">
+                    <img src="./assets/images/sodapdf-converted/ri_16.png" loading="lazy"
+                        style="background-color: white;">
+                </figure>
+                </p>
+                <p><b><strong>3. Explore Colleges:</strong></b>
+                    <br>
+                    ▪ Allow users to search and filter colleges based on various properties and
+                    attributes.<br>
+                    ▪ Such properties are institution level, program offered, application requirements
+                    and
+                    accepted standardized test ranges.<br>
+                    ▪ Display a selected college profile and its location information in detail.
+                <figure class="experience_img_flex">
+                    <img src="./assets/images/sodapdf-converted/ri_18.png" loading="lazy"
+                        style="background-color: white;">
+                </figure>
+                <figure class="experience_img_flex">
+                    <img src="./assets/images/sodapdf-converted/ri_20.png" loading="lazy"
+                        style="background-color: white;">
+                </figure>
+                <figure class="experience_img_flex">
+                    <img src="./assets/images/sodapdf-converted/ri_22.png" loading="lazy"
+                        style="background-color: white;">
+                </figure>
+
+                </p>
+                <h2>
+                    Reflection On Learning
+                </h2>
+                <p>
+                    • Collaboration:
+                    <br>Throughout this semester, our group has developed some excellent team-working
+                    skills. Individuals specialize in areas and contribute to the team through the work
+                    we produce. By collaborating, we become more confident in our knowledge and
+                    our abilities to carry project activities effectively.<br>
+                    • Effective communication:
+                    <br>Maintaining effective communication helped us keep our project on the right
+                    track. Especially during the pandemic, we took advantage of virtual meetings to
+                    scheduled weekly discussion to sharing ideas, updating project progress and plan
+                    future activities. Additionally, we have a message group chat for quick and easy
+                    communication and a shared drive for file sharing. Those strategies help our group
+                    to exceed the project deadline.<br>
+                    • Cloud database storage and access:
+                    <br>With this project, our team members are required to use different types of data
+                    sources with cloud storage. From this project, we learned technical skills in cloud
+                    database storage using Firebase and manage access data through web application
+                    building with Streamlit. We believe those skills empower us to and have a good
+                    impact on our future careers’ opportunities.
+                </p>
+                <h2>Challenges Faced
+
+                </h2>
+                <p>
+
+                    • Finding complete and accessible data about colleges and cities’ quality of life.
+                    Various sources that offer such data but none of them were up to date or
+                    comprehensive enough to cover our project scope, until we found IPEDS and
+                    Numbeo’s. IPEDS is open source, so we were able to identify and customize the
+                    list of properties we need. Numbeo, however, required an API license. We their
+                    support team to request a free-of-charge academic license for the duration of our
+                    project, and our request was granted.<br>
+                    • Integrating college data and city data in a meaningful manner.
+                    Naturally, different sources have different formats and standards, so we were
+                    challenged by merging the two datasets together while ensuring data consistency
+                    and completeness.<br>
+                    • Learning different new technologies and frameworks.
+                    A learning curve was expected as we work on the implementation of our project.
+                    We are exposed to different technologies for different phases of a development
+                    cycle, and it has been an enjoyable challenge so far.
+                </p>
+    </div>
+
+
+
+
+    </section>
+
+    </article>
+    </div>
+
+
+</body>
+
+</html>
